@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+* {
+  font-family: 'Cascadia Code', monospace;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--p-primary-color) var(--p-background);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto,"Helvetica Neue", sans-serif;
+  background: var(--p-background);
+
+  overflow-y: auto;
+}
+
+h1 {
+  color: var(--p-h1-color);
+}
+
+h2 {
+  color: var(--p-h2-color);
+}
+
+h3 {
+  color: var(--p-h3-color);
+}
+
+h4 {
+  color: var(--p-h4-color);
+}
+
+h5 {
+  color: var(--p-h5-color);
+}
+
+h6 {
+  color: var(--p-h6-color);
+}
