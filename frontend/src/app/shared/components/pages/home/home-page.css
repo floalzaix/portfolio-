@@ -1,3 +1,8 @@
+#home-page-container {
+  height: 100vh;
+  width: 100%;
+}
+
 .home-container {
   position: relative;
 
@@ -18,6 +23,7 @@
   --home-container-content-width: 335px;
   --home-container-content-height: 150px;
 
+  --entry-progress: 0;
 }
 
 .home-container-content {
@@ -57,7 +63,10 @@
   left: calc(50% - var(--home-container-content-width) / 2);
 
   width: 1px;
-  height: calc(50% + var(--home-container-content-height) / 2);
+  height: calc(
+    (50% + var(--home-container-content-height) / 2)
+    * (1 - var(--entry-progress))
+  );
 
   background: linear-gradient(
     to bottom,
@@ -73,7 +82,10 @@
   top: calc(50% - var(--home-container-content-height) / 2);
   left: calc(50% - var(--home-container-content-width) / 2);
 
-  width: calc(50% + var(--home-container-content-width) / 2);
+  width: calc(
+    (50% + var(--home-container-content-width) / 2)
+    * (1 - var(--entry-progress))
+  );
   height: 1px;
 
   background: linear-gradient(
@@ -91,7 +103,10 @@
   left: calc(50% + var(--home-container-content-width) / 2);
 
   width: 1px;
-  height: calc(50% + var(--home-container-content-height) / 2);
+  height: calc(
+    (50% + var(--home-container-content-height) / 2)
+    * (1 - var(--entry-progress))
+  );
 
   background: linear-gradient(
     to top,
@@ -107,7 +122,10 @@
   top: calc(50% + var(--home-container-content-height) / 2);
   left: 0;
 
-  width: calc(50% + var(--home-container-content-width) / 2);
+  width: calc((
+    50% + var(--home-container-content-width) / 2)
+    * (1 - var(--entry-progress))
+  );
   height: 1px;
 
   background: linear-gradient(

@@ -7,6 +7,8 @@
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--p-primary-color) var(--p-background);
+
+  overflow: hidden;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
   font-family: Roboto,"Helvetica Neue", sans-serif;
   background: var(--p-background);
 
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 h1 {
